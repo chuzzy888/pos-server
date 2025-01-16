@@ -12,6 +12,13 @@ const analyticsRoutes = require("./routes/analytics");
 const app = express();
 
 // Middleware
+app.use(
+  cors({
+    origin: ["https://enymazpos.vercel.app/"], // Allow only your frontend domain
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // If you need to send cookies or other credentials
+  })
+);
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
