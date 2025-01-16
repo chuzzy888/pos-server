@@ -19,7 +19,7 @@ app.use(
     credentials: true, // If you need to send cookies or other credentials
   })
 );
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
