@@ -18,6 +18,9 @@ const productSchema = new mongoose.Schema(
         "Cigarettes",
         "Insecticides",
         "Drinks",
+        "Cereals",
+        "Snacks",
+        "Others",
       ],
     },
     price: {
